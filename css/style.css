@@ -92,7 +92,7 @@ a { text-decoration: none; color: inherit; }
 }
 .hero__bg {
   position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1473172707857-f9e276582ab6?w=1600&q=80') center/cover;
+  background: url('https://images.pexels.com/photos/3747116/pexels-photo-3747116.jpeg?w=1600&q=80') center/cover;
   transform: scale(1.05);
   animation: heroZoom 20s ease-in-out infinite alternate;
 }
