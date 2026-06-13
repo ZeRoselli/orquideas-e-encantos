@@ -15,8 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const msg = encodeURIComponent(p.whatsapp);
     const el = document.createElement("div");
     el.className = "product";
+    const imgHtml = p.imagem
+      ? `<img class="product__image" src="${p.imagem}" alt="${p.nome}" loading="lazy">`
+      : `<div class="product__image product__image--placeholder" style="background:${p.cor}"><i class="fas fa-seedling"></i></div>`;
     el.innerHTML = `
-      <img class="product__image" src="${p.imagem}" alt="${p.nome}" loading="lazy">
+      ${imgHtml}
       <div class="product__body">
         <span class="product__badge">${p.categoria}</span>
         <h3 class="product__title">${p.nome}</h3>
